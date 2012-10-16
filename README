@@ -1,0 +1,8 @@
+# 소개
+이 문서는 MarkDown 뷰어로 읽으면 좋습니다.
+
+# 스크립트 내려 받기
+[GitHub](http://github.com)에 각종 스크립트를 올려놨습니다. [GitHub에 가서](https://githug.com/andromedarabbit/Useful-Mac-OS-X-Scripts) 파일을 한꺼번에 다운로드 받거나 git 으로 로컬에 내려 받으면 됩니다. 아마도 Mac OS X용 GitHub를 다운로드 받아 설치하는 게 가장 손쉬운 방법일 겁니다. 
+
+# 스크립트 올리기
+GitHub에서 `Pull Request` 버튼을 눌러 권한 부여 요청을 하세요.
