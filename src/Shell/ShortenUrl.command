@@ -5,10 +5,8 @@
 #  Website : www.thelinuxtips.com
 #  Ref: http://tinyurl.com/c4adpu7
  
-echo -n "Enter the URL : "
+echo -n "Enter the Long URL : "
 read url
-
-short_url=$(curl -C - -L -O ${url})
  
 short_url=$(curl -s http://tinyurl.com/api-create.php?url=${url})
 
