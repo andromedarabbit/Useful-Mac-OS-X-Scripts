@@ -9,6 +9,8 @@ echo -n "Enter the URL : "
 read url
 
 short_url=$(curl -C - -L -O ${url})
+ 
+short_url=$(curl -s http://tinyurl.com/api-create.php?url=${url})
 
 # copy the shortened url to the clipboard
 echo ${short_url} | pbcopy 
