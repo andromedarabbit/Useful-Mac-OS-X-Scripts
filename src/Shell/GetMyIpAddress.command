@@ -5,4 +5,11 @@ if [ -z "$BIN_PATH" ]; then
 	exit 1
 fi
 
-"$BIN_PATH" ifconfig.me
+# "$BIN_PATH" ifconfig.me
+MyIPAddress=$("$BIN_PATH" --silent ifconfig.me)
+
+# copy the value to the clipboard
+echo $MyIPAddress | pbcopy
+
+# print the value
+echo $MyIPAddress
