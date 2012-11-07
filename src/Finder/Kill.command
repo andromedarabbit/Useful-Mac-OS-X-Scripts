@@ -1,7 +1,7 @@
 #!/usr/bin/env bash 
 # tested with proctools version of pkill.
-PKILL_PATH=`which pkill`
-if [ -z "PKILL_PATH" ]; then
+BIN_PATH=`which pkill`
+if [ -z "BIN_PATH" ]; then
     echo "pkill is not found!"
 	exit 1
 fi
@@ -14,4 +14,4 @@ else
 	processName=$1
 fi
 
-"$PKILL_PATH" -i "$processName" 
+"$BIN_PATH" -i "$processName" 
