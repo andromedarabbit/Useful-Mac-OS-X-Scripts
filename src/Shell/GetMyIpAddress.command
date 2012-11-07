@@ -5,7 +5,8 @@ if [ -z "$BIN_PATH" ]; then
 	exit 1
 fi
 
-# "$BIN_PATH" ifconfig.me
+# get an address of this computer by connecting to the website 'ifconfig.me'.
+# the switch '--silent' diables the progress meter of curl.
 MyIPAddress=$("$BIN_PATH" --silent ifconfig.me)
 
 # copy the value to the clipboard
