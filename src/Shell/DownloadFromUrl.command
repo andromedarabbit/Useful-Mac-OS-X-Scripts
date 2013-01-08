@@ -18,4 +18,4 @@ else
 	url=$1
 fi
 
-$("$BIN_PATH" -C - -L -O ${url})
+$("$BIN_PATH" -C - -L -O "${url}")
