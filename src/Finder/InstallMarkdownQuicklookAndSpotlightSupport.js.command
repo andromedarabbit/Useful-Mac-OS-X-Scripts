@@ -112,6 +112,36 @@ shell.exec( 'mdimport -r ' + spotlightDstFilePath, {async:false}, function(code,
 });
 
 
+// Install QLStephan
+
+// ref: https://github.com/whomwah/qlstephen
+var qlStephanFileName = 'QLStephen.qlgenerator';
+var qlStephanZipFileName = qlStephanFileName + '.zip';
+
+downloadFromUrlToDir('https://github.com/downloads/whomwah/qlstephen/' + qlStephanZipFileName, downloadDir);
+
+unzipFile(downloadDir, qlStephanZipFileName);
+
+// var userQuickLookDir = path.join(homeDir, '/Library/QuickLook/');
+// if(!shell.test('-e', userQuickLookDir)) {
+	// shell.mkdir('-p', userQuickLookDir);
+// }
+
+var qlStephenDstFilePath = path.join(userQuickLookDir, qlStephanFileName);
+if(shell.test('-e', qlStephenDstFilePath)) {
+	shell.rm('-rf', qlStephenDstFilePath);
+}
+
+shell.mv('-f',  path.join(downloadDir, qlStephanFileName), userQuickLookDir);
+
+shell.exec( 'qlmanage -r', {async:false}, function(code, output) {
+	console.log('Exit code:', code);
+	console.log('Program output:', output);
+  
+	if(code != 0) {
+		shell.exit(code);
+	}
+});
 
 // Clean
 if(shell.test('-e', downloadDir)) {
