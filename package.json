@@ -37,6 +37,6 @@
 	"colors":"latest",
 	"prompt":"latest",
 	"es6-shim":"latest",
-	"toolbox-js":"git://github.com/andromedarabbit/toolbox-js.git#0.0.1"
+	"toolbox-js":"git://github.com/andromedarabbit/toolbox-js.git#master"
   }
 }
