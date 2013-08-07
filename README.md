@@ -1,5 +1,5 @@
 # Introduction
-This is my personal little open-source project. The plan is to keep the scripts which are useful for Mac OS X users. There is no other special rules but I have some principles:
+This is my personal little open-source project. The plan is to keep the scripts which are useful for Mac OS X users. There are no other special rules but I have some principles:
 
 * Easy to use.
 * Integration with [Alfred](http://www.alfredapp.com/).
