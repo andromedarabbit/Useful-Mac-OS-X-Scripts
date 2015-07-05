@@ -1,4 +1,7 @@
 # Introduction
+
+> This project is deprecated and will not be updated any more.
+
 This is my personal little open-source project. The plan is to keep the scripts which are useful for Mac OS X users. There are no other special rules but I have some principles:
 
 * Easy to use.
